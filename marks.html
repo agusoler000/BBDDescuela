@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./fetchnotas.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <header><img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1602700691/slcschoolsorg/txxanlmjxrk9mn8ebc1n/easthigh-logocopy.png" alt="" srcset="">
+            <nav id="nav"> <li> <a href="./students.html" id="nav1">ALUMNOS</a>  </li>
+            <li> <a href="./marks.html"id="nav2"> NOTAS </a></li>
+            <li> <a href="./adicionales.html" id="nav3"> OTROS </a> </li></nav>
+            </header>
+        
+        <form action=""onsubmit="return false" id="form">
+            <input type="text" placeholder="ID ALUMNO" id="student_id">
+            <input type="text" placeholder="ID ASIGNATURA" id="subject_id">
+            <input type="text" placeholder="FECHA" id="date">
+            <input type="text" placeholder="NOTA" id="mark">
+            <input type="text" placeholder="ID DE LA NOTA A MODIFICAR O ELIMINAR" id="id_mark">
+         
+            <button onclick="getMark()">MOSTRAR</button><button onclick="postMark()">CREAR</button><button onclick="putMark()">ACTUALIZAR</button><button onclick="deleteMark()">BORRAR</button>
+        </form>
+        <section id="info">
+            <h3>INFORMACION</h3>
+            <li>Utilice el id del alumno para mostrar sus notas</li>
+            <li>Sin pasar ID, ingresando los datos, puede ingresar una nueva nota la base de datos</li>
+            <li> Puede actualizar las notas de un alumno ingresando el ID de la nota correspondiente y pasando los datos nuevos en el formulario</li>
+            <li>Ingresando su ID, tambien puede borrar una nota</li>
+        </section>
+
+        <section id="section">
+        <p id="showname"></p>
+        <p id="showlastn"></p>
+        <p id="showgr"></p>
+        <p id="showye"></p>
+    </section>
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer id="footer"><p id="foot">BASE DE DATOS ESCUELA- <a href="https://github.com/agusoler000" id="foot1"> AGUSTIN SOLER CONDE</a>- 2021</p></footer>
+    </main>
+    </body>
+</html>

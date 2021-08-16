@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./fetchadi.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <header><img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1602700691/slcschoolsorg/txxanlmjxrk9mn8ebc1n/easthigh-logocopy.png" alt="" srcset="">
+            <nav id="nav"> <li> <a href="./students.html" id="nav1">ALUMNOS</a>  </li>
+            <li> <a href="./marks.html"id="nav2"> NOTAS </a></li>
+            <li> <a href="./adicionales.html" id="nav3"> OTROS </a> </li></nav>
+            </header>
+        
+        <form action=""onsubmit="return false" id="form">
+            <input type="text" placeholder="ID ALUMNO" id="student_id">
+            <input type="text" placeholder="ID PROFESOR" id="teacher_id">
+               
+            <button onclick="getAVG()">NOTA MEDIA</button><button onclick="getApuntadas()">APUNTADAS</button><button onclick="getImpartidas()">IMPARTIDAS</button>
+        </form>
+        <section id="info">
+            <h3>INFORMACION</h3>
+            <li>Utilice el id para mostrar la nota media de sus materias</li>
+            <li>Utilice el ID del alumno para ver las materias en las que esta apuntado</li>
+            <li> Utilice el ID del profesor para ver cuales son las materias que imparte</li>
+           
+        </section>
+        <section id="section">
+        <p id="showname"></p>
+        <p id="showlastn"></p>
+        <p id="showgr"></p>
+        <p id="showye"></p>
+    </section>
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer id="footer"><p id="foot">BASE DE DATOS ESCUELA- <a href="https://github.com/agusoler000" id="foot1"> AGUSTIN SOLER CONDE</a>- 2021</p></footer>
+    </main>
+    </body>
+</html>

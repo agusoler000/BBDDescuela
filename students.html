@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./fetchstudents.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main">
+        <header><img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1602700691/slcschoolsorg/txxanlmjxrk9mn8ebc1n/easthigh-logocopy.png" alt="" srcset="">
+        <nav id="nav"> <li> <a href="./students.html" id="nav1">ALUMNOS</a>  </li>
+        <li> <a href="./marks.html"id="nav2"> NOTAS </a></li>
+        <li> <a href="./adicionales.html" id="nav3"> OTROS </a> </li></nav>
+        </header>
+        
+        <form action=""onsubmit="return false" id="form">
+            <input type="text" placeholder="ID" id="id">
+            <input type="text" placeholder="Nombre alumno" id="name">
+            <input type="text" placeholder="Apellidos alumno" id="lastname">
+            <input type="text" placeholder="Grupo" id="group">
+            <input type="text" placeholder="Año de ingreso" id="styears">
+            <button onclick="getStudent()">MOSTRAR</button><button onclick="postStudent()">CREAR</button><button onclick="putAlumno()">ACTUALIZAR</button><button onclick="deleteAlumno()">BORRAR</button>
+        </form>
+        <section id="info">
+            <h3>INFORMACION</h3>
+            <li>Utilice el id del alumno para mostrar sus datos</li>
+            <li>Sin pasar ID, ingresando los datos, puede ingresar un nuevo alumno a la base de datos</li>
+            <li> Puede actualizar los datos de un alumno ingresando el ID correspondiente y pasando los datos nuevos en el formulario</li>
+            <li>Ingresando su ID, tambien puede borrar un alumno</li>
+        </section>
+
+        <section id="section">
+        <p id="showname"></p>
+        <p id="showlastn"></p>
+        <p id="showgr"></p>
+        <p id="showye"></p>
+    </section>
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    <footer id="footer"><p id="foot">BASE DE DATOS ESCUELA- <a href="https://github.com/agusoler000" id="foot1"> AGUSTIN SOLER CONDE</a>- 2021</p></footer>
+    </main>
+    </body>
+</html>
